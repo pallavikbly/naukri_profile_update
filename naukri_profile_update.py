@@ -35,12 +35,12 @@ try:
     time.sleep(3)
 
     edit_btn = driver.find_element(By.XPATH, '//*[@id="lazyKeySkills"]/div/div/div[1]/span[2]')
-    driver.execute_script("arguments[0].scrollIntoView({block: "center"});", edit_btn)
+    driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", edit_btn)
     edit_btn.click()
     time.sleep(2)
 
     save_btn = driver.find_element(By.XPATH, '//*[@id="saveKeySkills"]')
-    driver.execute_script("arguments[0].scrollIntoView({block: "center"});", save_btn)
+    driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", save_btn)
     save_btn.click()
     time.sleep(3)
 
