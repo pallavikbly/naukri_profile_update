@@ -21,13 +21,13 @@ try:
 
     
     driver.get("https://www.naukri.com/mnjuser/login")
-
+    #//*[@id="login_Layer"]
     #driver.find_element(By.LINK_TEXT, "Login").click()
     time.sleep(3)
 
-    driver.find_element(By.XPATH, '//input[@name="username"]').send_keys(EMAIL)
-    driver.find_element(By.XPATH, '//input[@type="password"]').send_keys(PASSWORD)
-    driver.find_element(By.XPATH, '//button[@type="submit"]').click()
+    driver.find_element(By.XPATH, '//*[@id="usernameField"]').send_keys(EMAIL)
+    driver.find_element(By.XPATH, '//*[@id="passwordField"]').send_keys(PASSWORD)
+    driver.find_element(By.XPATH, '(//button[@type="submit"])[1]').click()
     time.sleep(5)
 
     driver.get("https://www.naukri.com/mnjuser/profile")
