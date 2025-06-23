@@ -25,8 +25,8 @@ try:
     #driver.find_element(By.LINK_TEXT, "Login").click()
     time.sleep(3)
 
-    driver.find_element(By.XPATH, '//input[@placeholder="Enter your active Email ID / Username"]').send_keys(EMAIL)
-    driver.find_element(By.XPATH, '//input[@placeholder="Enter your password"]').send_keys(PASSWORD)
+    driver.find_element(By.XPATH, '//input[@type="text" and @name="username"]').send_keys(EMAIL)
+    driver.find_element(By.XPATH, '//input[@type="password" and @name="password"]').send_keys(PASSWORD)
     driver.find_element(By.XPATH, '//button[@type="submit"]').click()
     time.sleep(5)
 
