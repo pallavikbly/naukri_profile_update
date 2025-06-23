@@ -19,7 +19,10 @@ try:
     driver.get("https://www.naukri.com/")
     time.sleep(3)
 
-    driver.find_element(By.LINK_TEXT, "Login").click()
+    
+    driver.get("https://www.naukri.com/mnjuser/login")
+
+    #driver.find_element(By.LINK_TEXT, "Login").click()
     time.sleep(3)
 
     driver.find_element(By.XPATH, '//input[@placeholder="Enter your active Email ID / Username"]').send_keys(EMAIL)
